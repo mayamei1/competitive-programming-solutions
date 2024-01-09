@@ -7,7 +7,6 @@ tags:
   - work-backwards
   - graph
 ---
-
 #kattis #kattis-supplyroutes
 
 ## _Solution:_

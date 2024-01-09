@@ -6,7 +6,6 @@ tags:
   - string
   - ad-hoc
 ---
-
 #kattis #kattis-permcode
 
 ## _Solution:_

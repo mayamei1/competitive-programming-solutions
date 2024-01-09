@@ -2,13 +2,13 @@
 type:
   - competitive-programming
 tags:
-  - simulation
+  - complete-search
   - trivial
 ---
 #kattis #kattis-bottledup
 
 ## _Solution:_
-
+Search through all possible numbers of the smaller bottle, and check if the left over oil is divisible by the larger bottle ($s-v_2*x_2\equiv0\mod{v_1}$). Start search at the bottom in order to minimize number of bottles.
 
 https://open.kattis.com/problems/bottledup
 ```cpp

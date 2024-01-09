@@ -4,6 +4,7 @@ type:
   - kattis
 tags:
   - graph/bfs
+  - graph/sssp
 ---
 #kattis #kattis-erraticants
 
