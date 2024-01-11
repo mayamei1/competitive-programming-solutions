@@ -3,13 +3,13 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/primes/prime-factors
-name: Pascal
+  - math/primes/sieve
+name: Enlarging Hash Tables
 ---
 ## _Solution:_
-Get smallest prime factor $p$ of $n$, and calculate $n-n/p$. Special case: $n=1$.
+Iterate through every number greater than $2n$ and check primality. Also check for $n$'s primality.
 
-https://open.kattis.com/problems/pascal
+https://open.kattis.com/problems/enlarginghashtables
 ```cpp
 #include <iostream>
 #include <vector>
@@ -63,32 +63,44 @@ bool is_prime(ll n) {
     return true; // works for (last prime)^2
 }
 
-ll prime_factors(ll n) {
-    ll factor = 1000000001;
+void prime_factors(ll n, unordered_map<ll, ll>& factors) {
     for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++) {
         while (n % p[i] == 0) {
             n /= p[i];
-            factor = min(factor, p[i]);
+            factors[p[i]]++;
         }
     }
-    if (n != 1) factor = min(factor, n);
-    return factor;
+    if (n != 1) factors[n]++;
+}
+
+int vp(int p, int n) { // legendre's formula (highest power of prime p that can divide n!)
+    int ans = 0;
+    for (int i = p; i <= n; i *= p)
+        ans += n / i;
+    return ans;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
+    
+    sieve(10000000);
 
     ll n;
-    cin >> n;
+    
+    while (cin >> n && n != 0) {
+        bool n_prime = is_prime(n);
 
-    if (n == 1) {
-        cout << "0\n";
-        return 0;
+        ll i = n * 2 + 1;
+        while (true) {
+            if (is_prime(i)) {
+                cout << i;
+                if (!n_prime) cout << " (" << n << " is not prime)";
+                cout << '\n';
+                break;
+            }
+            i++;
+        }
     }
-
-    sieve(10000000);
-    ll factor = prime_factors(n);
-    cout << (n - n / factor) << '\n';
 }
 ```

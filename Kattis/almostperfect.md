@@ -4,12 +4,12 @@ type:
   - kattis
 tags:
   - math/primes/prime-factors
-name: Pascal
+name: Almost Perfect
 ---
 ## _Solution:_
-Get smallest prime factor $p$ of $n$, and calculate $n-n/p$. Special case: $n=1$.
+Calculate the [[Primes#Sum of unique divisors|sum of unique divisors]] and calculate the difference of $sumDiv(n)$ and $n$.
 
-https://open.kattis.com/problems/pascal
+https://open.kattis.com/problems/almostperfect
 ```cpp
 #include <iostream>
 #include <vector>
@@ -63,32 +63,44 @@ bool is_prime(ll n) {
     return true; // works for (last prime)^2
 }
 
+ll bin_pow(ll n, ll k) {
+    ll res = 1;
+    while (k) {
+        if (k & 1) res *= n;
+        n *= n;
+        k >>= 1;
+    }
+    return res;
+}
+
 ll prime_factors(ll n) {
-    ll factor = 1000000001;
+    ll ans = 1;
     for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++) {
+        ll count = 0;
         while (n % p[i] == 0) {
             n /= p[i];
-            factor = min(factor, p[i]);
+            count++;
         }
+        ans *= (bin_pow(p[i], count + 1) - 1) / (p[i] - 1);
     }
-    if (n != 1) factor = min(factor, n);
-    return factor;
+    if (n != 1) ans *= (bin_pow(n, 2) - 1) / (n - 1);
+    return ans;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n;
-    cin >> n;
-
-    if (n == 1) {
-        cout << "0\n";
-        return 0;
-    }
-
     sieve(10000000);
-    ll factor = prime_factors(n);
-    cout << (n - n / factor) << '\n';
+
+    int n;
+
+    while (cin >> n) {
+        ll val = abs(prime_factors(n) - 2 * n);
+        cout << n;
+        if (val == 0) cout << " perfect\n";
+        else if (val <= 2) cout << " almost perfect\n";
+        else cout << " not perfect\n";
+    }
 }
 ```

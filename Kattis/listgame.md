@@ -3,13 +3,13 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/primes/sieve
-name: Reseto
+  - math/primes/prime-factors
+name: A List Game
 ---
 ## _Solution:_
-Prime sieve, but keep track of number of unique non-primes during sieve.
+Find number of prime factors.
 
-https://open.kattis.com/problems/reseto
+https://open.kattis.com/problems/listgame
 ```cpp
 #include <iostream>
 #include <vector>
@@ -42,33 +42,48 @@ using namespace std;
 #define LSOne(S) ((S) & -(S))
 
 ll _sieve_size;
-bitset<100000010> bs;
+bitset<10000010> bs;
+vector<ll> p;
 
-int sieve(ll upper_bound, int k) {
+void sieve(ll upper_bound) {
     _sieve_size = upper_bound + 1;
     bs.set();
     bs[0] = 0; bs[1] = 0;
     for (ll i = 2; i < _sieve_size; i++) {
         if (!bs[i]) continue;
-        k--;
-        if (k == 0) return i;
-        for (ll j = i * i; j < _sieve_size; j += i) {
-            if (bs[j] == 1) {
-                bs[j] = 0;
-                k--;
-                if (k == 0) return j;
-            }
+        for (ll j = i * i; j < _sieve_size; j += i) bs[j] = 0;
+        p.push_back(i);
+    }
+}
+
+bool is_prime(ll n) {
+    if (n < _sieve_size) return bs[n];
+    for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++)
+        if (n % p[i] == 0) return false;
+    return true; // works for (last prime)^2
+}
+
+int prime_factors(ll n) {
+    int factors = 0;
+    for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++) {
+        while (n % p[i] == 0) {
+            n /= p[i];
+            factors++;
         }
     }
+    if (n != 1) factors++;
+    return factors;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, k;
-    cin >> n >> k;
+    sieve(10000000);
 
-    cout << sieve(n, k);
+    ll x;
+    cin >> x;
+
+    cout << prime_factors(x);
 }
 ```

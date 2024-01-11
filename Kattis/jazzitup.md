@@ -4,12 +4,13 @@ type:
   - kattis
 tags:
   - math/primes/prime-factors
-name: Pascal
+  - trivial
+name: Jazz it Up!
 ---
 ## _Solution:_
-Get smallest prime factor $p$ of $n$, and calculate $n-n/p$. Special case: $n=1$.
+Get all primes within 100000 (or some other reasonable number that is large enough to have primes that work for every $n$). Then iterate through every prime and check if $n\mod{m}\neq 1$.
 
-https://open.kattis.com/problems/pascal
+https://open.kattis.com/problems/jazzitup
 ```cpp
 #include <iostream>
 #include <vector>
@@ -63,32 +64,49 @@ bool is_prime(ll n) {
     return true; // works for (last prime)^2
 }
 
-ll prime_factors(ll n) {
-    ll factor = 1000000001;
+vector<ll> prime_factors(ll n) {
+    vector<ll> factors;
     for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++) {
         while (n % p[i] == 0) {
             n /= p[i];
-            factor = min(factor, p[i]);
+            factors.push_back(p[i]);
         }
     }
-    if (n != 1) factor = min(factor, n);
-    return factor;
+    if (n != 1) factors.push_back(n);
+    return factors;
+}
+
+ll euler_phi(ll n) {
+    ll ans = n;
+    for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++) {
+        if (n % p[i] == 0) ans -= ans / p[i];
+        while (n % p[i] == 0) n /= p[i];
+    }
+    if (n != 1) ans -= ans / n;
+    return ans;
+}
+
+int vp(int p, int n) { // legendre's formula (highest power of prime p that can divide n!)
+    int ans = 0;
+    for (int i = p; i <= n; i *= p)
+        ans += n / i;
+    return ans;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n;
+    sieve(1000000);
+
+    int n;
     cin >> n;
 
-    if (n == 1) {
-        cout << "0\n";
-        return 0;
+    for (int prime : p) {
+        if (n % prime) {
+            cout << prime;
+            break;
+        }
     }
-
-    sieve(10000000);
-    ll factor = prime_factors(n);
-    cout << (n - n / factor) << '\n';
 }
 ```

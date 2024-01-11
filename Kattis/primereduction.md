@@ -4,12 +4,13 @@ type:
   - kattis
 tags:
   - math/primes/prime-factors
-name: Pascal
+  - simulation
+name: Prime Reduction
 ---
 ## _Solution:_
-Get smallest prime factor $p$ of $n$, and calculate $n-n/p$. Special case: $n=1$.
+Simulate repeatedly checking prime and summing prime factors.
 
-https://open.kattis.com/problems/pascal
+https://open.kattis.com/problems/primereduction
 ```cpp
 #include <iostream>
 #include <vector>
@@ -64,31 +65,33 @@ bool is_prime(ll n) {
 }
 
 ll prime_factors(ll n) {
-    ll factor = 1000000001;
+    ll sum = 0;
     for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++) {
         while (n % p[i] == 0) {
             n /= p[i];
-            factor = min(factor, p[i]);
+            sum += p[i];
         }
     }
-    if (n != 1) factor = min(factor, n);
-    return factor;
+    if (n != 1) sum += n;
+    return sum;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n;
-    cin >> n;
-
-    if (n == 1) {
-        cout << "0\n";
-        return 0;
-    }
-
     sieve(10000000);
-    ll factor = prime_factors(n);
-    cout << (n - n / factor) << '\n';
+
+    int n;
+
+    while (cin >> n && n != 4) {
+        int count = 1;
+        while (!is_prime(n)) {
+            n = prime_factors(n);
+            count++;
+        }
+
+        cout << n << ' ' << count << '\n';
+    }
 }
 ```

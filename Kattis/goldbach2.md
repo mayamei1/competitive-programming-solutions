@@ -3,13 +3,15 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/primes/co-primes/eulers-phi
-name: Relatives
+  - math/primes/sieve
+name: Goldbach's Conjecture
 ---
-## _Solution:_
-Find number of co-primes of $n$ with the [[Primes#Finding number of co-primes|Totient function]].
+#kattis #kattis-goldbach2
 
-https://open.kattis.com/problems/relatives
+## _Solution:_
+Pre-calculate prime numbers, then for each query, check increasingly larger primes if $x-p_i$ is prime until it goes over half of $x$.
+
+https://open.kattis.com/problems/goldbach2
 ```cpp
 #include <iostream>
 #include <vector>
@@ -36,6 +38,10 @@ https://open.kattis.com/problems/relatives
 #define vvii vector<vii>
 #define ll long long int
 #define ull unsigned ll
+
+#define f(i,s,e) for(long long int i=s;i<e;i++)
+#define cf(i,s,e) for(long long int i=s;i<=e;i++)
+#define rf(i,e,s) for(long long int i=e-1;i>=s;i--)
 
 using namespace std;
 
@@ -85,16 +91,44 @@ ll euler_phi(ll n) {
     return ans;
 }
 
+int vp(int p, int n) { // legendre's formula (highest power of prime p that can divide n!)
+    int ans = 0;
+    for (int i = p; i <= n; i *= p)
+        ans += n / i;
+    return ans;
+}
+
+int n, x;
+vii ans;
+
+void solve() {
+    int i = 0, e = (x + 1) / 2;
+    ans = vii();
+    while (true) {
+        if (p[i] > e) break;
+        if (p[i] && is_prime(x - p[i])) ans.push_back({p[i], x - p[i]});
+        i++;
+    }
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    sieve(10000000);
+    sieve(32001);
 
-    int n;
-    
-    while (cin >> n && n != 0) {
-        cout << euler_phi(n) << '\n';
+    cin >> n;
+
+    while (n--) {
+        cin >> x;
+        solve();
+
+        cout << x << " has " << ans.size() << " representation(s)\n";
+        
+        for (ii a : ans) {
+            cout << a.first << '+' << a.second << '\n';
+        }
+        cout<< '\n';
     }
 }
 ```

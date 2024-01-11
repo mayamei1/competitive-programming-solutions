@@ -4,12 +4,14 @@ type:
   - kattis
 tags:
   - math/primes/sieve
-name: Reseto
+name: Prime Sieve
 ---
-## _Solution:_
-Prime sieve, but keep track of number of unique non-primes during sieve.
+#kattis #kattis-primesieve
 
-https://open.kattis.com/problems/reseto
+## _Solution:_
+Prime sieve, nothing extra or MLE.
+
+https://open.kattis.com/problems/primesieve
 ```cpp
 #include <iostream>
 #include <vector>
@@ -44,21 +46,13 @@ using namespace std;
 ll _sieve_size;
 bitset<100000010> bs;
 
-int sieve(ll upper_bound, int k) {
+void sieve(ll upper_bound) {
     _sieve_size = upper_bound + 1;
     bs.set();
     bs[0] = 0; bs[1] = 0;
     for (ll i = 2; i < _sieve_size; i++) {
         if (!bs[i]) continue;
-        k--;
-        if (k == 0) return i;
-        for (ll j = i * i; j < _sieve_size; j += i) {
-            if (bs[j] == 1) {
-                bs[j] = 0;
-                k--;
-                if (k == 0) return j;
-            }
-        }
+        for (ll j = i * i; j < _sieve_size; j += i) bs[j] = 0;
     }
 }
 
@@ -66,9 +60,24 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, k;
-    cin >> n >> k;
+    int n, q;
+    cin >> n >> q;
 
-    cout << sieve(n, k);
+    sieve(n + 1);
+
+    ll c = 0;
+    for (int i = 2; i <= n; i++) {
+        if (bs[i]) c++;
+    }
+
+    cout << c << '\n';
+
+    for (int i = 0; i < q; i++) {
+        ll x;
+        cin >> x;
+
+        if (bs[x]) cout << "1\n";
+        else cout << "0\n";
+    }
 }
 ```

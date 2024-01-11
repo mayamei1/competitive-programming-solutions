@@ -4,12 +4,12 @@ type:
   - kattis
 tags:
   - math/primes/prime-factors
-name: Pascal
+name: Primal Representation
 ---
 ## _Solution:_
-Get smallest prime factor $p$ of $n$, and calculate $n-n/p$. Special case: $n=1$.
+Get prime factors in prime factor exponential form
 
-https://open.kattis.com/problems/pascal
+https://open.kattis.com/problems/primalrepresentation
 ```cpp
 #include <iostream>
 #include <vector>
@@ -63,32 +63,49 @@ bool is_prime(ll n) {
     return true; // works for (last prime)^2
 }
 
-ll prime_factors(ll n) {
-    ll factor = 1000000001;
+unordered_map<ll, int> prime_factors(ll n) {
+    unordered_map<ll, int> factors;
     for (int i = 0; i < (int)p.size() && p[i]*p[i] <= n; i++) {
         while (n % p[i] == 0) {
             n /= p[i];
-            factor = min(factor, p[i]);
+            factors[p[i]]++;
         }
     }
-    if (n != 1) factor = min(factor, n);
-    return factor;
+    if (n != 1) factors[n]++;
+    return factors;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n;
-    cin >> n;
-
-    if (n == 1) {
-        cout << "0\n";
-        return 0;
-    }
-
     sieve(10000000);
-    ll factor = prime_factors(n);
-    cout << (n - n / factor) << '\n';
+
+    int n;
+
+    while (cin >> n) {
+        bool negative = false;
+        if (n < 0) {
+            n = -n;
+            negative = true;
+        }
+
+        unordered_map<ll, int> freq = prime_factors(n);
+        map<ll, int> ordered_freq;
+        for (auto pf : freq) {
+            ordered_freq.insert(pf);
+        }
+
+        if (negative) cout << "-1 ";
+        for (auto pf : ordered_freq) {
+            if (pf.second == 1) {
+                cout << pf.first << ' ';
+            } else {
+                cout << pf.first << '^' << pf.second << ' ';
+            }
+        }
+
+        cout << '\n';
+    }
 }
 ```
