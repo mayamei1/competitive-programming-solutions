@@ -3,9 +3,8 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - graph
-  - limit-reduction
-  - representation
+  - problem-reduction
+  - math
 name: Tractor
 ---
 ## _Solution:_

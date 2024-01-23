@@ -4,7 +4,6 @@ type:
   - kattis
 tags:
   - graph/tree
-  - graph/traversal
 name: Travelling Caterpillar
 ---
 ## _Solution:_
