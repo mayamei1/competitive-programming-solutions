@@ -3,14 +3,13 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/factors
-  - limit-reduction
-name: Magnesium Supplementation
+  - complete-search
+name: Disgruntled Judge
 ---
 ## _Solution:_
-Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
+Search every possible $(a,b)$ and check if every second generated number matches with the next input.
 
-https://open.kattis.com/problems/magnesiumsupplementation
+https://open.kattis.com/problems/disgruntledjudge
 ```cpp
 #include <iostream>
 #include <vector>
@@ -51,25 +50,41 @@ https://open.kattis.com/problems/magnesiumsupplementation
 
 using namespace std;
 
+int A, B;
+
+int next(int x) {
+    return (A * x + B) % 10001;
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n, k, p;
-    cin >> n >> k >> p;
+    int n;
+    cin >> n;
 
-    set<ll> ans;
-
-    for (ll i = 1; i * i <= n; i++) {
-        if (n % i) continue;
-        ll j = n / i;
-        if (j <= p && i <= i) ans.insert(i);
-        if (i <= p && j <= k) ans.insert(j);
+    vi input(n);
+    f (i, 0, n) {
+        cin >> input[i];
     }
 
-    cout << ans.size() << '\n';
-    for (ll a : ans) {
-        cout << a << '\n';
+    cf (a, 0, 10000) {
+        cf (b, 0, 10000) {
+            A = a;
+            B = b;
+            bool ans = true;
+            f (i, 1, n) {
+                if (next(next(input[i - 1])) != input[i]) {
+                    ans = false;
+                    break;
+                }
+            }
+
+            if (ans) {
+                f (i, 0, n) cout << next(input[i]) << '\n';
+                return 0;
+            }
+        }
     }
 }
 ```

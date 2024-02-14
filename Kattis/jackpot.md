@@ -3,14 +3,13 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/factors
-  - limit-reduction
-name: Magnesium Supplementation
+  - math/gcd
+name: Jackpot
 ---
 ## _Solution:_
-Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
+Find the LCM of every periodicity per machine. If LCM at any point goes over a billion, keep a boolean flag to keep track.
 
-https://open.kattis.com/problems/magnesiumsupplementation
+https://open.kattis.com/problems/jackpot
 ```cpp
 #include <iostream>
 #include <vector>
@@ -51,25 +50,37 @@ https://open.kattis.com/problems/magnesiumsupplementation
 
 using namespace std;
 
+ll gcd(ll a, ll b) {
+    if(a == 0) return b;
+    return gcd(b % a, a);
+}
+
+ll lcm(ll a, ll b) {
+    return a / gcd(a, b) * b;
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n, k, p;
-    cin >> n >> k >> p;
+    int n;
+    cin >> n;
 
-    set<ll> ans;
+    while (n--) {
+        int w;
+        cin >> w;
 
-    for (ll i = 1; i * i <= n; i++) {
-        if (n % i) continue;
-        ll j = n / i;
-        if (j <= p && i <= i) ans.insert(i);
-        if (i <= p && j <= k) ans.insert(j);
-    }
+        ll sol, next;
+        cin >> sol;
+        bool over = false;
+        f (i, 1, w) {
+            cin >> next;
+            sol = lcm(sol, next);
+            if (sol > 1000000000ll) over = true;
+        }
 
-    cout << ans.size() << '\n';
-    for (ll a : ans) {
-        cout << a << '\n';
+        if (over) cout << "More than a billion.\n";
+        else cout << sol << '\n';
     }
 }
 ```

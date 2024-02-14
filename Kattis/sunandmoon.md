@@ -3,14 +3,13 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/factors
-  - limit-reduction
-name: Magnesium Supplementation
+  - simulation
+name: Sun and Moon
 ---
 ## _Solution:_
-Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
+Simulate time steps up until $5000$, checking if the both the sun and moon are in the right location (based on if the parity the time step, modulo the periodicity, is correct).
 
-https://open.kattis.com/problems/magnesiumsupplementation
+https://open.kattis.com/problems/sunandmoon
 ```cpp
 #include <iostream>
 #include <vector>
@@ -55,21 +54,14 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n, k, p;
-    cin >> n >> k >> p;
-
-    set<ll> ans;
-
-    for (ll i = 1; i * i <= n; i++) {
-        if (n % i) continue;
-        ll j = n / i;
-        if (j <= p && i <= i) ans.insert(i);
-        if (i <= p && j <= k) ans.insert(j);
-    }
-
-    cout << ans.size() << '\n';
-    for (ll a : ans) {
-        cout << a << '\n';
+    int ds, ys, dm, ym;
+    cin >> ds >> ys >> dm >> ym;
+    int ms = (ys - ds) % ys, mm = (ym - dm) % ym;
+    cf (i, 1, 5001) {
+        if (i % ys == ms && i % ym == mm) {
+            cout << i << endl;
+            return 0;
+        }
     }
 }
 ```

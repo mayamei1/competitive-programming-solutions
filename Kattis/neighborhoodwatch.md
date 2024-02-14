@@ -3,14 +3,13 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/factors
-  - limit-reduction
-name: Magnesium Supplementation
+  - math/combinatorics
+name: Neighborhood Watch
 ---
 ## _Solution:_
-Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
+Start with assuming every pairs of houses are safe or $n\times(n+1)/2$. Then, for every continuous grouping of unsafe houses, subtract from the answer every pair between those houses (assuming the length of the group is $l$, subtract $l\times(l+1)/2$).
 
-https://open.kattis.com/problems/magnesiumsupplementation
+https://open.kattis.com/problems/neighborhoodwatch
 ```cpp
 #include <iostream>
 #include <vector>
@@ -55,21 +54,27 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n, k, p;
-    cin >> n >> k >> p;
+    ll n, k;
+    cin >> n >> k;
 
-    set<ll> ans;
-
-    for (ll i = 1; i * i <= n; i++) {
-        if (n % i) continue;
-        ll j = n / i;
-        if (j <= p && i <= i) ans.insert(i);
-        if (i <= p && j <= k) ans.insert(j);
+    if (k == 0) {
+        cout << "0\n";
+        return 0;
     }
 
-    cout << ans.size() << '\n';
-    for (ll a : ans) {
-        cout << a << '\n';
+    ll ans = n * (n + 1) / 2;
+    ll h, p_h, diff;
+    p_h = -1;
+    f (i, 0, k) {
+        cin >> h;
+        h--;
+        diff = h - p_h - 1;
+        ans -= diff * (diff + 1) / 2;
+        p_h = h;
     }
+    diff = n - p_h - 1;
+    ans -= diff * (diff + 1) / 2;
+
+    cout << ans;
 }
 ```

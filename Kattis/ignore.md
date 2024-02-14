@@ -3,14 +3,13 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/factors
-  - limit-reduction
-name: Magnesium Supplementation
+  - math/combinatorics
+name: Ignore the Garbage
 ---
 ## _Solution:_
-Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
+Only 7 acceptable digits. Map the 7 digits in ascending order to the parities of $\mod 7$. Then, get every digit of $n$ in base 7, and map it to the the acceptable digits (rotated 180).
 
-https://open.kattis.com/problems/magnesiumsupplementation
+https://open.kattis.com/problems/ignore
 ```cpp
 #include <iostream>
 #include <vector>
@@ -55,21 +54,22 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n, k, p;
-    cin >> n >> k >> p;
-
-    set<ll> ans;
-
-    for (ll i = 1; i * i <= n; i++) {
-        if (n % i) continue;
-        ll j = n / i;
-        if (j <= p && i <= i) ans.insert(i);
-        if (i <= p && j <= k) ans.insert(j);
-    }
-
-    cout << ans.size() << '\n';
-    for (ll a : ans) {
-        cout << a << '\n';
+    ll k;
+    while (cin >> k) {
+        ll tmp = k;
+        string ans;
+        while (tmp) {
+            int digit = tmp % 7;
+            if (digit == 0) ans += "0";
+            else if (digit == 1) ans += "1";
+            else if (digit == 2) ans += "2";
+            else if (digit == 3) ans += "5";
+            else if (digit == 4) ans += "9";
+            else if (digit == 5) ans += "8";
+            else if (digit == 6) ans += "6";
+            tmp /= 7;
+        }
+        cout << ans << endl;
     }
 }
 ```

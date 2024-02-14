@@ -5,12 +5,12 @@ type:
 tags:
   - math/factors
   - limit-reduction
-name: Magnesium Supplementation
+name: Candy Division
 ---
 ## _Solution:_
-Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
+Search $i$ between $1$ and $\sqrt{n}$ and check if $i$ is a factor of $n$. If so, add $i$ and $n/i$ to an ordered set, or add to a list to be sorted at the end (accounting for duplicates). Print factors minus $1$.
 
-https://open.kattis.com/problems/magnesiumsupplementation
+https://open.kattis.com/problems/candydivision
 ```cpp
 #include <iostream>
 #include <vector>
@@ -55,21 +55,18 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n, k, p;
-    cin >> n >> k >> p;
-
+    ll n;
+    cin >> n;
     set<ll> ans;
-
     for (ll i = 1; i * i <= n; i++) {
-        if (n % i) continue;
-        ll j = n / i;
-        if (j <= p && i <= i) ans.insert(i);
-        if (i <= p && j <= k) ans.insert(j);
+        if (n % i == 0) {
+            ans.insert(i);
+            ans.insert(n / i);
+        }
     }
 
-    cout << ans.size() << '\n';
     for (ll a : ans) {
-        cout << a << '\n';
+        cout << (a - 1) << ' ';
     }
 }
 ```

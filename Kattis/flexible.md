@@ -3,14 +3,14 @@ type:
   - competitive-programming
   - kattis
 tags:
-  - math/factors
-  - limit-reduction
-name: Magnesium Supplementation
+  - complete-search
+  - trivial
+name:
 ---
 ## _Solution:_
-Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
+Search each pairs of partitions (including $0$ and $w$), and add absolute difference to answer list/set. Do not include $0$ in final answer.
 
-https://open.kattis.com/problems/magnesiumsupplementation
+https://open.kattis.com/problems/flexible
 ```cpp
 #include <iostream>
 #include <vector>
@@ -55,21 +55,17 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll n, k, p;
-    cin >> n >> k >> p;
-
-    set<ll> ans;
-
-    for (ll i = 1; i * i <= n; i++) {
-        if (n % i) continue;
-        ll j = n / i;
-        if (j <= p && i <= i) ans.insert(i);
-        if (i <= p && j <= k) ans.insert(j);
-    }
-
-    cout << ans.size() << '\n';
-    for (ll a : ans) {
-        cout << a << '\n';
-    }
+    int w, p;
+    cin >> w >> p;
+    vi l(p);
+    f (i, 0, p) cin >> l[i];
+    l.push_back(0);
+    l.push_back(w);
+    set<int> ans;
+    for (int i : l)
+        for (int j : l)
+            ans.insert(abs(i - j));
+    ans.erase(0);
+    for (int a : ans) cout << a << ' ';
 }
 ```
