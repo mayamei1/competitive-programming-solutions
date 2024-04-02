@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
-  - limit-reduction
+  - competitive-programming/catalog/kattis
 name: Biggest Slice
 ---
+#competitive-programming/simulation
+#competitive-programming/limit-reduction
 ## _Solution:_
 Have a bit set of size $360\times60\times60$ or $1296000$. This number is the maximum number of cuts you could make, and is small enough of a number to simulate the cuts. Start at degree $0$ and, as you make cuts, set the corresponding bit in the bit set to $1$. If at any point you come across a $1$ bit, then you can stop early, as the rest of the cuts will be redundant. Iterate through the bit set to find the maximum distance between $1$ bits. Use this distance to calculate the area of the slice.
 

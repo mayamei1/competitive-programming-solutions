@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/bfs
-  - graph/sssp
+  - competitive-programming/catalog/kattis
 name: dungeon
 ---
+#competitive-programming/graph/bfs
+#competitive-programming/graph/sssp
 ## _Solution:_
 BFS through a 3D grid starting from "S".
 

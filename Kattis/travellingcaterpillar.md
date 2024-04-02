@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/tree
+  - competitive-programming/catalog/kattis
 name: Travelling Caterpillar
 ---
+#competitive-programming/graph/tree
 ## _Solution:_
 Mark every visited node for all paths from desired nodes to root, then add up every distance/edge between visited nodes.
 

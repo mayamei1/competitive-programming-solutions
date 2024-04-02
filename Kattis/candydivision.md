@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/factors
-  - limit-reduction
+  - competitive-programming/catalog/kattis
 name: Candy Division
 ---
+#competitive-programming/math/factors
+#competitive-programming/limit-reduction
 ## _Solution:_
 Search $i$ between $1$ and $\sqrt{n}$ and check if $i$ is a factor of $n$. If so, add $i$ and $n/i$ to an ordered set, or add to a list to be sorted at the end (accounting for duplicates). Print factors minus $1$.
 

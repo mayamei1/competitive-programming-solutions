@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math
-  - ad-hoc
-  - trivial
+  - competitive-programming/catalog/kattis
 name: Saving For Retirement
 ---
+#competitive-programming/math
+#competitive-programming/ad-hoc
+#competitive-programming/trivial
 ## _Solution:_
 Calculate Bob's retirement savings, and calculate the number of years necessary for Alice to save to go over that. Add that to Alice's current age. Bob's total is $B_t=(B_r-B)\times B_s$, and Alice needs to save for $\lfloor{\frac{B_t}{A_s}}\rfloor+1$ years.
 

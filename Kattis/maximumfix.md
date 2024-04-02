@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - ad-hoc
-  - simulation
+  - competitive-programming/catalog/kattis
 name: Maximum Fix
 ---
+#competitive-programming/ad-hoc
+#competitive-programming/simulation
 ## _Solution:_
 Grab each number, and determine the minimum rotation necessary for it to be a fixed number. Count up the frequency of each number, and print out the rotation with the maximum frequency (and the count).
 

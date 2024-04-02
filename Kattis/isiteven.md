@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math
-  - trivial
+  - competitive-programming/catalog/kattis
 name: Is It Even?
 ---
+#competitive-programming/math
+#competitive-programming/trivial
 ## _Solution:_
 Find out how many times you can divide $n$ by 2.
 

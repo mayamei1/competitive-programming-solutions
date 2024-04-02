@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math
+  - competitive-programming/catalog/kattis
 name: Ternarian Weights
 ---
+#competitive-programming/math
 ## _Solution:_
 Calculate the ternary representation of $x$. As you get the next digit, do the following. If digit is $1$, add that power to the right pan. If the digit is $2$, add that power to the left, and add to $x$. If the digit is $0$, don't do anything extra.
 

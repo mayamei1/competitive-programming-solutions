@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - greedy
-  - ds/priority-queue
+  - competitive-programming/catalog/kattis
 name: Distributing Ballot Boxes
 ---
+#competitive-programming/greedy
+#competitive-programming/ds/priority-queue
 ## _Solution:_
 Concept: Start with one ballot box per city. Greedily give the city with the largest person per box the next ballot box. Do this until you run out of boxes.
 

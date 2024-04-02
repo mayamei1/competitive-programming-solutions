@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - dp
-  - work-backwards
-  - sorting
+  - competitive-programming/catalog/kattis
 name: Beast Bullies
 ---
+#competitive-programming/dp
+#competitive-programming/work-backwards
+#competitive-programming/sorting
 ## _Solution:_
 Add animals in descending power, while keeping track of "attacking" and "defending" animals. First animal is the first attacker, and the next animals are put into defending. If power of defending is >= power of attacking, then the defending animals become attacking animals as well.
 

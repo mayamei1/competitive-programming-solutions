@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/bfs
-  - graph/sssp
+  - competitive-programming/catalog/kattis
 name: Gregory the Grasshopper
 ---
+#competitive-programming/graph/bfs
+#competitive-programming/graph/sssp
 ## _Solution:_
 BFS with a chess knight's movement. Print minimum number of hops to reach destination.
 

@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/primes/sieve
+  - competitive-programming/catalog/kattis
 name: Enlarging Hash Tables
 ---
+#competitive-programming/math/primes/sieve
 ## _Solution:_
 Iterate through every number greater than $2n$ and check primality. Also check for $n$'s primality.
 

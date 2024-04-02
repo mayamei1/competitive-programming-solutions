@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - complete-search
-  - trivial
+  - competitive-programming/catalog/kattis
 name:
 ---
+#competitive-programming/complete-search
+#competitive-programming/trivial
 ## _Solution:_
 Search each pairs of partitions (including $0$ and $w$), and add absolute difference to answer list/set. Do not include $0$ in final answer.
 

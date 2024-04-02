@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/primes/prime-factors
+  - competitive-programming/catalog/kattis
 name: Primal Representation
 ---
+#competitive-programming/math/primes/prime-factors
 ## _Solution:_
 Get prime factors in prime factor exponential form
 

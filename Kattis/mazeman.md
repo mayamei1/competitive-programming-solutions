@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/flood-fill
-  - graph/bfs
+  - competitive-programming/catalog/kattis
 name: MazeMan
 ---
+#competitive-programming/graph/flood-fill
+#competitive-programming/graph/bfs
 ## _Solution:_
 Flood fill starting from each letter and check that it reaches at least one dot.
 

@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - string
-  - trivial
+  - competitive-programming/catalog/kattis
 name: Beekeeper
 ---
+#competitive-programming/string
+#competitive-programming/trivial
 ## _Solution:_
 Find every consecutive pairs of vowels (no triplets or higher), and print string with highest count.
 

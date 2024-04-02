@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - binary-search
-  - simulation
-  - ds/priority-queue
+  - competitive-programming/catalog/kattis
 name: Don't Hunger Together
 ---
+#competitive-programming/binary-search
+#competitive-programming/simulation
+#competitive-programming/ds/priority-queue
 ## _Solution:_
 Binary search possible answers (ignoring number of players until the end), and simulate to check if valid answer. With simulation, keep a priority queue that prioritizes by earliest expiration turn. Possible answers can be decimals, so it may be possible to use `double` data type, but this solution uses 64-bit integer, with a $10^9$ times offset.
 

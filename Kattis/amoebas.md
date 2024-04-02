@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/dfs
+  - competitive-programming/catalog/kattis
 name: Sheba's Amoebas
 ---
+#competitive-programming/graph/dfs
 ## _Solution:_
 Iterate through each cell, and check if it is colored in. If it is, increment counter, and DFS to find and mark the connected component as uncolored.
 

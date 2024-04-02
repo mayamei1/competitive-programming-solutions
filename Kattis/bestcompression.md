@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/combinatorics
+  - competitive-programming/catalog/kattis
 name: Best Compression
 ---
+#competitive-programming/math/combinatorics
 ## _Solution:_
 Check if $n\leq 2^{b+1}-1$.
 

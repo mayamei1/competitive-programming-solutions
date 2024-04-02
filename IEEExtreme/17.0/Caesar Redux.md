@@ -1,13 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - ad-hoc
-  - trivial
+  - competitive-programming/catalog/ieeextreme
+name: Caesar Redux
 ---
-#ieeextreme 
-
+#competitive-programming/ad-hoc
+#competitive-programming/trivial
 ## _Solution:_
 Simple shift/Caesar cypher. Check for the word "the" to determine encoding or decoding.
 

@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - ds/segment-tree
+  - competitive-programming/catalog/kattis
 name: Traveling Merchant
 ---
+#competitive-programming/ds/segment-tree
 ## _Solution:_
 Build segment trees for each potential offset and process the queries that are relevant to that offset. Segment tree keeps track of `min`, `max`, `r_diff` (maximum difference left-to-right direction), `l_diff` (in the right-to-left direction). When "summing" the two halves, take `min` and `max` of both sides, and the `l_diff` is the `max(left.diff, right.diff, left.max - right.min)`
 

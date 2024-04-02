@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/tree
-  - dp
+  - competitive-programming/catalog/kattis
 name: Marbles On A Tree
 ---
+#competitive-programming/graph/tree
+#competitive-programming/dp
 ## _Solution:_
 For a particular subtree, you want to push any supply or deficit of marbles from the children up to the parent/root. Pushing deficit is like pushing extras down to the children. So, for a subtree, where the supply/deficit is pushed to its root, the number of moves can be calculated by summing up the magnitude of supply/deficit of the children.
 

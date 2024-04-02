@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - complete-search
+  - competitive-programming/catalog/kattis
 name: Disgruntled Judge
 ---
+#competitive-programming/complete-search
 ## _Solution:_
 Search every possible $(a,b)$ and check if every second generated number matches with the next input.
 

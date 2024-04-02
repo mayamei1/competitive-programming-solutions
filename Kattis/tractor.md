@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - problem-reduction
-  - math
+  - competitive-programming/catalog/kattis
 name: Tractor
 ---
+#competitive-programming/problem-reduction
+#competitive-programming/math
 ## _Solution:_
 Imagine no bounds for $A$ and $B$. Starting with $n=0$ moves, you start with a "diagonal line" of visited locations with sides of length $1$. With exactly $n=1$ moves, all locations will be new locations, forming a larger "diagonal." This is due to the fact that all moves up to $n$ have to be done in either the $x$ or $y$ direction and cannot be discarded (another way to look at it is that $x\oplus y=2^{n+1}-1$). As you grow $n$,  the amount of new locations you've added are $2^n$.
 

@@ -1,14 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - string
-  - greedy
-  - work-backwards
+  - competitive-programming/catalog/ieeextreme
+name: Jarawi and The Interview
 ---
-#ieeextreme
-
+#competitive-programming/string
+#competitive-programming/greedy
+#competitive-programming/work-backwards
 ## _Solution:_
 Start by building a list of each index for each character in $s$. For each query, iterate backwards through the string. With each character, greedily try to get the highest possible index without going over the previous iteration's index that has the same letter. This can be found with binary search. If impossible, then the index of the current iteration indicates the start of the largest suffix of $p$.
 

@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - complete-search
+  - competitive-programming/catalog/kattis
 name: 4 thought
 ---
+#competitive-programming/complete-search 
 ## _Solution:_
 Pre-calculate by search all possible combinations of operations and storing the expression into a hash table (if multiple answers, doesn't matter which one). With each query, print out the expression.
 

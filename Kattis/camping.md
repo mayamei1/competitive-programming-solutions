@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - dp
-  - dimension-splitting
-  - ds/priority-queue
+  - competitive-programming/catalog/kattis
 name: Nordic Camping
 ---
+#competitive-programming/dp
+#competitive-programming/limit-reduction
+#competitive-programming/ds/priority-queue
 ## _Solution:_
 Use dynamic programming to get the largest square area into one corner of the square. Then spread the answer by row, then by column. To do that, (for one dimension) keep a priority queue that keeps track of size of square and index of that square, and sort by the largest square. Then, assign the location based on the largest square that is still in range. If the largest is not in range, keep popping out of priority queue until there  is a square that is in range.
 

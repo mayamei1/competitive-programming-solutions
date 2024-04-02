@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/flood-fill
-  - ds/disjoint-set
-  - graph/bfs
+  - competitive-programming/catalog/kattis
 name: Island Buses
 ---
+#competitive-programming/graph/flood-fill
+#competitive-programming/ds/disjoint-set
+#competitive-programming/graph/bfs
 ## _Solution:_
 Use flood fill to find and count every island (including the `X`s) and keep track in a disjoint set. Then flood fill to find and count bridges (and maintaining the disjoint set), and for any `X` you come across while flood-filling, you merge that island's set with the bridge's set.
 

@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - string
-  - ad-hoc
+  - competitive-programming/catalog/kattis
 name: Permutation Code
 ---
+#competitive-programming/string
+#competitive-programming/ad-hoc
 ## _Solution:_
 Keep track of what characters are at which indices for `s` and `p`. Starting at `d`, decode the first letter, then decode at `d-1` using the answer from `d`, and continue until `0`. Then start from `n-1` and decode using the answer from `0`, and continue until `d+1`.
 

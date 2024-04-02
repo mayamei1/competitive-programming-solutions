@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
-  - geometry
-  - trivial
+  - competitive-programming/catalog/kattis
 name: Flow Layout
 ---
+#competitive-programming/simulation
+#competitive-programming/geometry
+#competitive-programming/trivial
 ## _Solution:_
 Simulate adding rectangles, print minimum width/height of bounding box.
 

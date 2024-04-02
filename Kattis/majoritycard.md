@@ -1,15 +1,13 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
-  - data-representation
-  - ds/umap
-  - ds/set
-  - amortize
+  - competitive-programming/catalog/kattis
 name: Majority Card
 ---
+#competitive-programming/simulation
+#competitive-programming/data-representation
+#competitive-programming/ds/umap
+#competitive-programming/ds/set
+#competitive-programming/amortize
 ## _Solution:_
 Keep a "condensed" deque which keeps track of order of the stack. Keep an hash map to keep track of the frequency. Keep track of a set to keep track of the the smallest majority frequency. For each query, you pop out each affected number from the set, update the value, and insert it back in.
 

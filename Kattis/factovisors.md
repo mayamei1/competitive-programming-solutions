@@ -1,13 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/primes
+  - competitive-programming/catalog/kattis
 name: Factovisors
 ---
-#kattis #kattis-factovisors
-
+#competitive-programming/math/primes
 ## _Solution:_
 Find prime factors of $m$ as a hash-map of frequency of primes and use [[Primes#Legendre's Formula (highest power of prime $p$ that divides $n!$)|Legendre's formula]] to find if $n!$ has enough of each prime in the hash-map.
 

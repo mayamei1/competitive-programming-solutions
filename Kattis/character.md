@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - "#math/combinatorics"
+  - competitive-programming/catalog/kattis
 name: Character Development
 ---
+#competitive-programming/math/combinatorics
 ## _Solution:_
 $O(n)$ solution: Count every $_nC_i$ for $i$ between $2$ and $n$.
 

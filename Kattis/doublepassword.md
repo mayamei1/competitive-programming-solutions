@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - string
-  - math
-  - ad-hoc
+  - competitive-programming/catalog/kattis
 name: Double Password
 ---
+#competitive-programming/string
+#competitive-programming/math
+#competitive-programming/ad-hoc
 ## _Solution:_
 Find number of different digits at each location, and the solution is 2 to the power of the number of differences.
 

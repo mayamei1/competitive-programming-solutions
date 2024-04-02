@@ -1,12 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - dp
+  - competitive-programming/catalog/ieeextreme
+name: Ice Cubes
 ---
-#ieeextreme 
-
+#competitive-programming/dp
 ## _Solution:_
 Simple DP problem. DP states are current indices $(i,j)$ and number of **consecutive** "bad" coffee shops $K$. The table defaults to everything as "not visited" or a value of $-1$. After setting up base cases, you can iterate $(i,j)$ through a nested for loop, and a third nested loop for current $K$. If a particular state can be accessed, then $\mathrm{dp(i,j,k)}$ is the maximum based on the top and left cells.
 

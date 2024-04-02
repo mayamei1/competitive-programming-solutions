@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/dijkstra
-  - graph/sssp
-  - "#graph/weighted"
+  - competitive-programming/catalog/kattis
 name: Human Cannonball Run
 ---
+#competitive-programming/graph/dijkstra
+#competitive-programming/graph/sssp
+#competitive-programming/graph/weighted
 ## _Solution:_
 Calculate edges with vertices as the start/stop locations and the cannon locations. Start doesn't have the option to "launch" and stop doesn't have any edges going out. Use Dijkstra's algorithm.
 

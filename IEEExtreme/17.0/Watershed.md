@@ -1,13 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - graph/dfs
-  - graph/flood-fill
+  - competitive-programming/catalog/ieeextreme
+name: Watershed
 ---
-#ieeextreme 
-
+#competitive-programming/graph/dfs
+#competitive-programming/graph/flood-fill
 ## _Solution:_
 Look for locations in the grid where there are no outgoing edges. These locations are drains and for each of them, DFS up to higher elevations to find out how much water is flowing into it. Have a separate grid to determine if a cell has already been calculated to avoid re-computations. For any particular cell that has not been calculated yet, continue to DFS up to find out how much water flows into the *current* cell. Once all of the "children" have been calculated, you can calculate your own cell. Do this until the drain is calculated. Find maximum water any drain has.
 

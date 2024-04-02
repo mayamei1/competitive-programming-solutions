@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - greedy
-  - ds/priority-queue
+  - competitive-programming/catalog/kattis
 name: Array Smoothening
 ---
+#competitive-programming/greedy
+#competitive-programming/ds/priority-queue
 ## _Solution:_
 Concept: Greedily decrement from most frequent.
 

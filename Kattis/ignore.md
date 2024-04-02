@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/combinatorics
+  - competitive-programming/catalog/kattis
 name: Ignore the Garbage
 ---
+#competitive-programming/math/combinatorics
 ## _Solution:_
 Only 7 acceptable digits. Map the 7 digits in ascending order to the parities of $\mod 7$. Then, get every digit of $n$ in base 7, and map it to the the acceptable digits (rotated 180).
 

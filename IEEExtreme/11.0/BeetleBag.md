@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - dp/classical
+  - competitive-programming/catalog/ieeextreme
+name: BeetleBag
 ---
-#ieeextreme 
+#competitive-programming/dp/classical
 ## _Solution:_
 A classical knapsack problem. DP states are which items to include up to ($i$) and capacity ($j$).
 $$

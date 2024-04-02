@@ -1,15 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/dijkstra
-  - graph/sssp
-  - graph/weighted
+  - competitive-programming/catalog/kattis
 name: Single source shortest path, non-negative weights
 ---
-#kattis #kattis-shortestpath1
-
+#competitive-programming/graph/dijkstra
+#competitive-programming/graph/sssp
+#competitive-programming/graph/weighted
 ## _Solution:_
 Use Dijkstra's algorithm. There can be multiple directed edges with the same source/destination pair.
 

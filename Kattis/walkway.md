@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/dijkstra
-  - graph/sssp
-  - graph/weighted
+  - competitive-programming/catalog/kattis
 name: Trapezoid Walkway
 ---
+#competitive-programming/graph/dijkstra
+#competitive-programming/graph/sssp
+#competitive-programming/graph/weighted
 ## _Solution:_
 Do Dijkstra's algorithm, where the vertices are widths, and the trapezoids represent an edge with the $\mathrm{area}\times2$ as the weight.
 

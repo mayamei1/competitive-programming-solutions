@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - trivial
-  - math
+  - competitive-programming/catalog/kattis
 name: Water Journal
 ---
+#competitive-programming/trivial
+#competitive-programming/math
 ## _Solution:_
 Check if the maximum and minimum numbers have appeared previously. If only one is missing, then it is the other. If both are missing, its impossible. If both are present, it can be any number between the range.
 

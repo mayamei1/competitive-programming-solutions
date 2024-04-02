@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - complete-search
+  - competitive-programming/catalog/kattis
 name: Noonerized Spumbers
 ---
+#competitive-programming/complete-search
 ## _Solution:_
 Search every possible pairs of prefixes for each pair of numbers -- $(x, y)$, $(y,z)$, and $(z, x)$.
 

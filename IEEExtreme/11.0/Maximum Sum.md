@@ -1,13 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - greedy
-  - work-backwards
+  - competitive-programming/catalog/ieeextreme
+name: Maximum Sum
 ---
-#ieeextreme 
-
+#competitive-programming/greedy
+#competitive-programming/work-backwards
 ## _Solution:_
 To find any solution with the maximum sum is trivial. Start with a list (or deque) with only the largest value. Then alternate adding to the left or right of the list until exhausted. However, finding the smallest alphabetical order is harder. In order to find it, work backwards. Start by adding all zeros to the left side. Then start alternating left and right, until a third duplicate shows up (aka the last elements of left and right should be equal to the current), as you will need to add all of the duplicates over two to the left. Once done, return adding to the left, then right, alternating again until the next third duplicate.
 

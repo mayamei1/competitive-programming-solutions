@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
-  - complete-search
-  - limit-reduction
+  - competitive-programming/catalog/kattis
 name: Trick and Treat
 ---
+#competitive-programming/simulation
+#competitive-programming/complete-search
+#competitive-programming/limit-reduction
 ## _Solution:_
 Observation: maximum search space is searching between `[M-10, M]`. If you have any less candy, then you start losing more groups than you gain.
 

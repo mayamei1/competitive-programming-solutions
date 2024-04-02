@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/primes/prime-factors
+  - competitive-programming/catalog/kattis
 name: A List Game
 ---
+#competitive-programming/math/primes/prime-factors
 ## _Solution:_
 Find number of prime factors.
 

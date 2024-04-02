@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - ds/umap
+  - competitive-programming/catalog/kattis
 name: Adding Words
 ---
+#competitive-programming/ds/umap
 ## _Solution:_
 Keep track of two hash-maps for the definition of numbers and the inverse. Make sure to delete overwritten values in the inverse hash-map.
 

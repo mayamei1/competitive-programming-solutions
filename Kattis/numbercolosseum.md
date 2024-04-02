@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
-  - ds/stack
+  - competitive-programming/catalog/kattis
 name: Number Colosseum
 ---
+#competitive-programming/simulation
+#competitive-programming/ds/stack
 ## _Solution:_
 Simulate :)
 

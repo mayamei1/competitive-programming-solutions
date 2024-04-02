@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - sorting
+  - competitive-programming/catalog/kattis
 name: Lines Per Hour
 ---
+#competitive-programming/sorting
 ## _Solution:_
 Sort problems by their lines of code, then pick the shortest ones right until it goes over $5$ times fastest lines per hour.
 

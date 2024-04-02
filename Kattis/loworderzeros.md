@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/primes
-  - math/modular-arithmetic
-  - math/factorials
+  - competitive-programming/catalog/kattis
 name: Low Order Zeros
 ---
+#competitive-programming/math/primes
+#competitive-programming/math/modular-arithmetic
+#competitive-programming/math/factorials
 ## _Solution:_
 Observe that the number of $0$ in the factorial is the minimum of factors of $2$ or $5$. When looking at the prime factorizations, we need a pair of $2$ and $5$ to get a low-order $0$ digit.
 

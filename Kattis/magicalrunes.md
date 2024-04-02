@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - string
-  - math
+  - competitive-programming/catalog/kattis
 name: Magical Runes
 ---
+#competitive-programming/string
+#competitive-programming/math
 ## _Solution:_
 This follows the same behavior as incrementing binary digits
 

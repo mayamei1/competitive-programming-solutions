@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - complete-search
-  - trivial
+  - competitive-programming/catalog/kattis
 name: Bottled-Up Feelings
 ---
+#competitive-programming/complete-search
+#competitive-programming/trivial
 ## _Solution:_
 Search through all possible numbers of the smaller bottle, and check if the left over oil is divisible by the larger bottle ($s-v_2*x_2\equiv0\mod{v_1}$). Start search at the bottom in order to minimize number of bottles.
 

@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
-  - ds/stack
+  - competitive-programming/catalog/kattis
 name: Even Up Solitaire
 ---
+#competitive-programming/simulation
+#competitive-programming/ds/stack
 ## _Solution:_
 Iterate through each card, and keep a stack of the "right-most" card. As you get the next card, check if the sum of the new and the right-most cards are even. If so, remove the right-most from the stack. Else insert the new card into the stack.
 

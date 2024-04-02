@@ -1,13 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/modular-arithmetic
+  - competitive-programming/catalog/kattis
 name: Card Divisibility
 ---
-#kattis #kattis-carddivisibility
-
+#competitive-programming/math/modular-arithmetic
 ## _Solution:_
 Divisibility of 9 can be found by adding the sum of digits. Same can be done with modulo 9. [[Modular Arithmetic#Addition, subtraction, multiplication|Modular arithmetic]] says that we can split the digits into sections as well . Ex: $1234\%m=((1\%9)+(2\%9)+(3\%9)+(4\%9))\%9$. But it can also be recombined by summing, ex: $(1+2+3+4)\%9$. Which means, you can find the answer by summing all numbers between `L` and `R`.
 

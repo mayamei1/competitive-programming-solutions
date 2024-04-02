@@ -1,13 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/primes/sieve
+  - competitive-programming/catalog/kattis
 name: Prime Sieve
 ---
-#kattis #kattis-primesieve
-
+#competitive-programming/math/primes/sieve
 ## _Solution:_
 Prime sieve, nothing extra or MLE.
 

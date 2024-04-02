@@ -1,14 +1,12 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - complete-search
-  - work-backwards
-  - graph/bfs
-  - bitmask
+  - competitive-programming/catalog/kattis
 name: Shotcube
 ---
+#competitive-programming/complete-search
+#competitive-programming/work-backwards
+#competitive-programming/graph/bfs
+#competitive-programming/bitmask
 ## _Solution:_
 Pre-calculate the distance of each state with BFS. Start the BFS with the "end state," and make valid moves to the next states. Keep track of all of the distances of each state to an end state in an hash map. Then go through each query and print the pre-calculated distance or $-1$ if not valid.
 

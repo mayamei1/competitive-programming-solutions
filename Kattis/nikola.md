@@ -1,16 +1,12 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/dijkstra
-  - graph/sssp
-  - graph/weighted
-  - graph/state-space
+  - competitive-programming/catalog/kattis
 name: Nikola
 ---
-#kattis #kattis-nikola
-
+#competitive-programming/graph/dijkstra
+#competitive-programming/graph/sssp
+#competitive-programming/graph/weighted
+#competitive-programming/graph/state-space
 ## _Solution:_
 Vertices represent the current square and jump (max jump value is $N-1$). There are up to two edges (going to `(curr_sq+jump+1, curr_jump+1)` or `(curr_sq-jump, jump)`) and the weights are the fees of the destination square. Use Dijkstra's algorithm and the answer is the minimum "distance" at vertex $N$ with any jump value.
 

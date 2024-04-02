@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - ad-hoc
+  - competitive-programming/catalog/kattis
 name: Contest Advancement
 ---
+#competitive-programming/ad-hoc
 ## _Solution:_
-
+Add team to answer until $s_i$'s count is at $c$, then you instead put them into the extras (keeping the same order). If length of answer is less than $k$, fill with extras.
 
 https://open.kattis.com/problems/contestadvancement
 ```cpp

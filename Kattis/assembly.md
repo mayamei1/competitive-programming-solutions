@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - "#problem-reduction"
-  - graph/cycle-detection
-  - graph/dfs
+  - competitive-programming/catalog/kattis
 name: Self-Assembly
 ---
+#competitive-programming/problem-reduction
+#competitive-programming/graph/cycle-detection
+#competitive-programming/graph/dfs
 ## _Solution:_
 First, assume we can find an unbounded structure, however, there can be one or more "collisions" or intersections. Convince yourself that this structure can be simplified to a path. Since we are allowed to reflect/flip molecules, we can "flip" angles of the path. Observe that this path can then be transformed to be a staircase-shape (or sometimes a straight line), which does not have any intersections. This proves that the "geometry" of the path ultimately does not matter.
 

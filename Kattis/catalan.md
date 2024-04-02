@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/combinatorics
+  - competitive-programming/catalog/kattis
 name: Catalan Numbers
 ---
+#competitive-programming/math/combinatorics
 ## _Solution:_
 Calculate the $n$th Catalan number with the following equation $c_n=\frac{(2n)!}{(n+1)!n!}$. The numbers are much larger than 64-bit integers. Keep track of factorials up to $10000$.
 

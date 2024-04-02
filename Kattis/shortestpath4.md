@@ -1,14 +1,12 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/dijkstra
-  - graph/sssp
-  - "#graph/weighted"
-  - graph/state-space
+  - competitive-programming/catalog/kattis
 name: Single source shortest path, safe path
 ---
+#competitive-programming/graph/dijkstra
+#competitive-programming/graph/sssp
+#competitive-programming/graph/weighted
+#competitive-programming/graph/state-space
 ## _Solution:_
 Dijkstra's algorithm, but the state space includes a dimension for current number of junctions. Make sure to not push next edges if the current number of junctions is already at $k$. If at any point you reach the destination, terminate early and print answer.
 

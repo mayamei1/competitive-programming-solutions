@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
-  - ds/priority-queue
+  - competitive-programming/catalog/kattis
 name: Knigs of the Forest
 ---
+#competitive-programming/simulation
+#competitive-programming/ds/priority-queue
 ## _Solution:_
 Simulate finding the maximum strength moose. Use priority queue to keep track of maximum. If moose is Karl within $n$ years, then print year.
 

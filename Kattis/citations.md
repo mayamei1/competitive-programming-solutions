@@ -1,14 +1,12 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/tree
-  - graph/dfs
-  - sorting
-  - dp
+  - competitive-programming/catalog/kattis
 name: Citations
 ---
+#competitive-programming/graph/tree
+#competitive-programming/graph/dfs
+#competitive-programming/sorting
+#competitive-programming/dp
 ## _Solution:_
 For any particular subtree, imagine that the children are already optimal, meaning that the child's subtree minimizes the total delay time of its particular subtree. You can treat the entire vertex/book as two values: the total time it takes to read this book and the number of books in this tree (including the original). With the optimal children, you can build up the optimal parent.
 

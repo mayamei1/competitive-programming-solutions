@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/flood-fill
-  - graph/dfs
-  - graph/bfs
+  - competitive-programming/catalog/kattis
 name: Terraces
 ---
+#competitive-programming/graph/flood-fill
+#competitive-programming/graph/dfs
+#competitive-programming/graph/bfs
 ## _Solution:_
 Iterate through each cell, and DFS/BFS to flood-fill and find/count all cells that neighbor the initial cell that have the same value, and if at any point, any of those neighbors have a lower value, then invalidate the search.
 

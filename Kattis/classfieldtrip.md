@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - string
-  - sorting
-  - trivial
+  - competitive-programming/catalog/kattis
 name: Class Field Trip
 ---
+#competitive-programming/string
+#competitive-programming/sorting
+#competitive-programming/trivial
 ## _Solution:_
 Combine strings, and sort by character
 

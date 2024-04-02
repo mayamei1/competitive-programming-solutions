@@ -1,14 +1,12 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - complete-search
-  - bitmask
-  - graph/dag
-  - dp
+  - competitive-programming/catalog/kattis
 name: Primary X-Subfactor Series
 ---
+#competitive-programming/complete-search
+#competitive-programming/bitmask
+#competitive-programming/graph/dag
+#competitive-programming/dp
 ## _Solution:_
 Recursively find the next integer in the series by iterating through every subsequence of the current value (using a bitmask) and checking if it is a subfactor. If it is, then recursively find the next integer with that subfactor. While doing so, keep track of the current path, and keep checking if the current path is better than the current "best" path. Optimizations could be done with the observation that this is a DAG and DP can be used to remove some calculations. However, a complete search is fast enough, due to the small input size.
 

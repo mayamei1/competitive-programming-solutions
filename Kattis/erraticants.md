@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/bfs
-  - graph/sssp
+  - competitive-programming/catalog/kattis
 name: Erratic Ants
 ---
+#competitive-programming/graph/bfs
+#competitive-programming/graph/sssp
 ## _Solution:_
 Create a hash-map of edges while traversing the initial path. Then BFS to find shortest path to the end.
 

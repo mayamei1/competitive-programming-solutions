@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - simulation
+  - competitive-programming/catalog/kattis
 name: Sun and Moon
 ---
+#competitive-programming/simulation
 ## _Solution:_
 Simulate time steps up until $5000$, checking if the both the sun and moon are in the right location (based on if the parity the time step, modulo the periodicity, is correct).
 

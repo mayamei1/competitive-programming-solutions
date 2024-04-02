@@ -1,12 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - dp/recursive
+  - competitive-programming/catalog/ieeextreme
+name: Happy Numbers
 ---
-#ieeextreme 
-
+#competitive-programming/dp/recursive
 ## _Solution:_
 Drawing influence from the algorithm to [find number of happy numbers <= 10^n (OEIS)](https://oeis.org/A068571 "https://oeis.org/A068571"), an observation can be found with the bound $10^{16}$. One step into finding out of a number is a happy number, the maximum possible value is $9^2+9^2+\dots+9^2$ or $81\times16=1296$. This means that if we previously knew every happy number up to $1300$, we could tell if any number is a happy number or not.
 

@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/gcd
+  - competitive-programming/catalog/kattis
 name: Das Blinkenlights
 ---
+#competitive-programming/math/gcd
 ## _Solution:_
 Check if the LCM of $p$ and $q$ is at most $s$.
 

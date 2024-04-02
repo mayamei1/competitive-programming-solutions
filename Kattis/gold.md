@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - graph/dfs
-  - graph/bfs
+  - competitive-programming/catalog/kattis
 name: Getting Gold
 ---
+#competitive-programming/graph/dfs
+#competitive-programming/graph/bfs
 ## _Solution:_
 DFS/BFS starting from the player's starting location. At each node, before you traverse to others, if the current node has a trap as a neighbor, do not traverse past this node.
 

@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/gcd
+  - competitive-programming/catalog/kattis
 name: Jackpot
 ---
+#competitive-programming/math/gcd
 ## _Solution:_
 Find the LCM of every periodicity per machine. If LCM at any point goes over a billion, keep a boolean flag to keep track.
 

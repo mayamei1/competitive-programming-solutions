@@ -1,11 +1,9 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/combinatorics
+  - competitive-programming/catalog/kattis
 name: Neighborhood Watch
 ---
+#competitive-programming/math/combinatorics
 ## _Solution:_
 Start with assuming every pairs of houses are safe or $n\times(n+1)/2$. Then, for every continuous grouping of unsafe houses, subtract from the answer every pair between those houses (assuming the length of the group is $l$, subtract $l\times(l+1)/2$).
 

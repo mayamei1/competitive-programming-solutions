@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - trivial
-  - string
+  - competitive-programming/catalog/kattis
 name: Is Y a Vowel?
 ---
+#competitive-programming/trivial
+#competitive-programming/string
 ## _Solution:_
 Count the number of vowels, if Y is a vowel or not.
 

@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/polynomials/horner
-  - dp
-  - math/polynomials/pascals-triangle
+  - competitive-programming/catalog/kattis
 name: Plotting Polynomials
 ---
+#competitive-programming/math/polynomials/horner
+#competitive-programming/dp
+#competitive-programming/math/polynomials/pascals-triangle
 ## _Solution:_
 The accumulation of $C$ values results in with frequencies that follow the Pascal's triangle. Calculate $p(x)$ for $0 \le x\le n$ with [[Polynomials#Horner's Method|Horner's method]], and with each iteration, calculate $C_x$ with the previous $C_{1\le x \le n}$ values.
 

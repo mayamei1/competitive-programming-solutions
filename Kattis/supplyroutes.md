@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - ds/disjoint-set
-  - work-backwards
-  - graph
+  - competitive-programming/catalog/kattis
 name: Supply Routes
 ---
+#competitive-programming/ds/disjoint-set
+#competitive-programming/work-backwards
+#competitive-programming/graph
 ## _Solution:_
 Start by overrunning every street and creating a disjoint set of connected junctions. Iterate through queries backwards: merge if the operation is `0`, find if the operation is `1`
 

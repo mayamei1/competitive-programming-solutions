@@ -1,13 +1,11 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - geometry
-  - math
-  - sorting
+  - competitive-programming/catalog/kattis
 name: Lifeguards
 ---
+#competitive-programming/geometry
+#competitive-programming/math
+#competitive-programming/sorting
 ## _Solution:_
 Sort points by location (e.g. increasing $x$, then decreasing $y$). Find middle point accounting for even/odd parity. Then set the two lifeguards as far away as possible in the $x$ direction, on the same $y$ as the middle. Then if even parity, move one lifeguard up and the other down (based on how you sort points). If odd parity, move one up or down one (depending on sorting again).
 

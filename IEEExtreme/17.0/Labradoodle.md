@@ -1,15 +1,12 @@
 ---
-type:
-  - competitive-programming
-  - ieeextreme
 tags:
-  - binary-search
-  - data-representation
-  - string
-  - ds/set
+  - competitive-programming/catalog/ieeextreme
+name: Labradoodle
 ---
-#ieeextreme 
-
+#competitive-programming/binary-search
+#competitive-programming/data-representation
+#competitive-programming/string
+#competitive-programming/ds/set
 ## _Solution:_
 While not explicitly using the standard library set, I have effectively used one. Create a sorted list of dictionary words, as well as a sorted list of reversed string dictionary words. This is to figure out how many words fit a particular prefix or suffix.
 

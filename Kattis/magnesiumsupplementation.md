@@ -1,12 +1,10 @@
 ---
-type:
-  - competitive-programming
-  - kattis
 tags:
-  - math/factors
-  - limit-reduction
+  - competitive-programming/catalog/kattis
 name: Magnesium Supplementation
 ---
+#competitive-programming/math/factors
+#competitive-programming/limit-reduction
 ## _Solution:_
 Search $i$ between $1$ and $\sqrt{n}$, and check if $i$ is a factor of $n$. Check if $i$ or $n/i$ is at most $k$ in order to add to answer list.
 
