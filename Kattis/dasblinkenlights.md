@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Das Blinkenlights
+date: 2020-04-04
 ---
 #competitive-programming/math/gcd
 ## _Solution:_

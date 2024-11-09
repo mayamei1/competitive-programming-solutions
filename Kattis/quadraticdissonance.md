@@ -1,10 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Quadratic Dissonance
+date: 2023-04-05
 ---
 #competitive-programming/binary-search
-#competitive-programming/binary-search/ternary-search
 ## _Solution:_
 Binary search the answer. Could have used [[Binary Search#Ternary Search|ternary search]], but used derivatives instead.
 

@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Relatives
+date: 2023-08-02
 ---
-#competitive-programming/math/primes/co-primes/eulers-phi
+#competitive-programming/math/number-theory/eulers-phi
 ## _Solution:_
 Find number of co-primes of $n$ with the [[Primes#Finding number of co-primes|Totient function]].
 

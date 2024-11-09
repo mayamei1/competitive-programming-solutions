@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/ieeextreme
+  - competitive-programming/judges/ieeextreme
 name: Jarawi and The Interview
+date: 2023-09-30
 ---
 #competitive-programming/string
 #competitive-programming/greedy

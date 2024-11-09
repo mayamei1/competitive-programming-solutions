@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Hello World!
+date: 2019-02-10
 ---
 #competitive-programming/trivial
 ## _Solution:_

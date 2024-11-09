@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Paintings
+date: 2024-03-18
 ---
 #competitive-programming/complete-search 
 ## _Solution:_

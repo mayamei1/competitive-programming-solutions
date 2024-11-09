@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Streets Ahead
+date: 2024-02-26
 ---
 #competitive-programming/data-representation #competitive-programming/trivial 
 ## _Solution:_

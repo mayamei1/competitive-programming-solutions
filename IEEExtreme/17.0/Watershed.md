@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/ieeextreme
+  - competitive-programming/judges/ieeextreme
 name: Watershed
+date: 2023-10-28
 ---
 #competitive-programming/graph/dfs
 #competitive-programming/graph/flood-fill

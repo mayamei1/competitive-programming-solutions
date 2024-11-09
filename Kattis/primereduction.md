@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Prime Reduction
+date: 2023-07-31
 ---
-#competitive-programming/math/primes/prime-factors
+#competitive-programming/math/number-theory/prime-factors
 #competitive-programming/simulation
 ## _Solution:_
 Simulate repeatedly checking prime and summing prime factors.

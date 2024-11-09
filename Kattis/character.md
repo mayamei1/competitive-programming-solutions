@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Character Development
+date: 2020-02-07
 ---
 #competitive-programming/math/combinatorics
 ## _Solution:_

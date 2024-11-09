@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: The Deal of the Day
+date: 2024-04-01
 ---
 #competitive-programming/complete-search #competitive-programming/math/combinatorics #competitive-programming/bitmask 
 ## _Solution:_

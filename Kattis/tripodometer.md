@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Trip Odometer
+date: 2023-04-05
 ---
-#competitive-programming/ds/sets
+#competitive-programming/ds
 #competitive-programming/trivial
 ## _Solution:_
 Sum up all distances, iterate through each distance, and add `sum-dist[i]` to a set.

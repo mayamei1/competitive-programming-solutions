@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Frosting on the Cake
+date: 2024-04-03
 ---
 #competitive-programming/math #competitive-programming/limit-reduction #competitive-programming/geometry 
 ## _Solution:_

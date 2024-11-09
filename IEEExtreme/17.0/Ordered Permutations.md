@@ -1,11 +1,14 @@
 ---
 tags:
-  - competitive-programming/catalog/ieeextreme
+  - competitive-programming/judges/ieeextreme
 name: Ordered Permutations
+date: 2023-10-28
 ---
 #competitive-programming/math/combinatorics
 #competitive-programming/dp
 #competitive-programming/math/modular-arithmetic
+#competitive-programming/permutation 
+#competitive-programming/ds/range-query/running-sum 
 ## _Solution:_
 Combinatorics problem using DP. Imagine building up the permutation one index at a time. Instead of being explicit about which values could be at a given location, think about where the next value in the permutation can be inserted. There are two states to keep track of: one for the index of the permutation you are trying to insert, and the previous iteration's possible insertion locations.
 

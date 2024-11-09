@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Candy Division
+date: 2024-02-05
 ---
 #competitive-programming/math/factors
 #competitive-programming/limit-reduction

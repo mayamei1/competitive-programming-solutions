@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Self-Assembly
+date: 2024-01-23
 ---
 #competitive-programming/problem-reduction
 #competitive-programming/graph/cycle-detection

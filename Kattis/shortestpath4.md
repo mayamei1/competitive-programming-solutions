@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Single source shortest path, safe path
+date: 2024-01-09
 ---
 #competitive-programming/graph/dijkstra
 #competitive-programming/graph/sssp

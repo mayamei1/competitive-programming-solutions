@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Ghost Leg
+date: 2023-04-17
 ---
-#competitive-programming/simulation
+#competitive-programming/simulation #competitive-programming/permutation 
 ## _Solution:_
 Iterate through each rung and simulate each number
 

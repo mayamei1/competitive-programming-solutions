@@ -1,11 +1,11 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: LCM Pair Sum
+date: 2024-02-17
 ---
 #competitive-programming/math/combinatorics
 #competitive-programming/math/gcd
-#competitive-programming/divide-and-conquer
 ## _Solution:_
 Lets call each prime power $a_i=p_i{}^{n_i}$. All possible combinations of LCMs for $a_i$ is every power of $p_i$ from $0\leq k<n_i$ paired with $a_i$, plus $a_i$ paired with itself. 
 $$
@@ -31,7 +31,7 @@ $$
 So, since we have $f(a_i)=[g_i+a_i(n_i+1)]+a_i$, and we set $h(a_i)=[g_i+a_i(n_{i}+1)]$, we get
 $$f(a_ia_j)=h(a_i)h(a_j)+a_ia_j$$
 
-You can continue this, and calculate $f(a_1a_{2}\cdots a_c)=h(a_{1})h(a_{2})\cdots h(a_{c})+a_{1}a_{2}\cdots a_{c}$. Since this is multiplicative, you can do the multiplication in $O(\log{(c)})$ time with divide-and-conquer. However, there is ample time to do it in linear time (and is done in this solution).
+You can continue this, and calculate $f(a_1a_{2}\cdots a_c)=h(a_{1})h(a_{2})\cdots h(a_{c})+a_{1}a_{2}\cdots a_{c}$.
 
 https://open.kattis.com/problems/lcmpairsum
 ```cpp

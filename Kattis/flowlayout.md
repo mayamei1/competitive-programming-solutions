@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Flow Layout
+date: 2023-07-18
 ---
 #competitive-programming/simulation
 #competitive-programming/geometry

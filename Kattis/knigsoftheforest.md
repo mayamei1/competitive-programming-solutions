@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Knigs of the Forest
+date: 2023-09-11
 ---
 #competitive-programming/simulation
 #competitive-programming/ds/priority-queue

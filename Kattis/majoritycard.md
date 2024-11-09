@@ -1,13 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Majority Card
+date: 2023-09-26
 ---
-#competitive-programming/simulation
-#competitive-programming/data-representation
-#competitive-programming/ds/umap
-#competitive-programming/ds/set
-#competitive-programming/amortize
+#competitive-programming/simulation #competitive-programming/data-representation #competitive-programming/limit-reduction #competitive-programming/ds 
 ## _Solution:_
 Keep a "condensed" deque which keeps track of order of the stack. Keep an hash map to keep track of the frequency. Keep track of a set to keep track of the the smallest majority frequency. For each query, you pop out each affected number from the set, update the value, and insert it back in.
 

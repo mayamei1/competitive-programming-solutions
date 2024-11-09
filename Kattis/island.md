@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Island Buses
+date: 2023-09-02
 ---
 #competitive-programming/graph/flood-fill
 #competitive-programming/ds/disjoint-set

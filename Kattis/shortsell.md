@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Short Sell
+date: 2024-04-04
 ---
 #competitive-programming/greedy #competitive-programming/work-backwards 
 ## _Solution:_

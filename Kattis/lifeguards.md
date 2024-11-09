@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Lifeguards
+date: 2023-09-25
 ---
 #competitive-programming/geometry
 #competitive-programming/math

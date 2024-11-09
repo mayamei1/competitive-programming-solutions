@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Classrooms
+date: 2024-03-22
 ---
-#competitive-programming/greedy #competitive-programming/ds/multiset 
+#competitive-programming/greedy
 ## _Solution:_
 Sort in ascending order of termination time (then in ascending order of starting time). Keep a multiset of $k$ termination times. For each event, check for classroom with latest termination time that can still allow for the current event. If it exists, then set this classroom's termination time to now be the new event's termination time. If it doesn't exist, then skip adding this event.
 

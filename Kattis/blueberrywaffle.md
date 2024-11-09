@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Blueberry Waffle
+date: 2024-02-19
 ---
 #competitive-programming/math #competitive-programming/trivial 
 ## _Solution:_

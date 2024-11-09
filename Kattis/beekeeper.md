@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Beekeeper
+date: 2024-01-08
 ---
 #competitive-programming/string
 #competitive-programming/trivial

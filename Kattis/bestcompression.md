@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Best Compression
+date: 2021-10-11
 ---
 #competitive-programming/math/combinatorics
 ## _Solution:_

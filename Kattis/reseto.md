@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Reseto
+date: 2023-07-29
 ---
-#competitive-programming/math/primes/sieve
+#competitive-programming/math/number-theory/sieve
 ## _Solution:_
 Prime sieve, but keep track of number of unique non-primes during sieve.
 

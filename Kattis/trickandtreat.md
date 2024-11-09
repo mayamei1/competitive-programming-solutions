@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Trick and Treat
+date: 2023-07-16
 ---
 #competitive-programming/simulation
 #competitive-programming/complete-search

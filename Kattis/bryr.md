@@ -1,11 +1,12 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
-  - competitive-programming/graph/weighted
+  - competitive-programming/judges/kattis
 name: Bridges
+date: 2023-09-18
 ---
 #competitive-programming/graph/dijkstra
 #competitive-programming/graph/sssp
+#competitive-programming/graph/weighted
 ## _Solution:_
 Use Dijkstra's algorithm, with the $c$ value of each edge as the weight.
 

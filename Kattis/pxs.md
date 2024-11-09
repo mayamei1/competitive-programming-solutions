@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Primary X-Subfactor Series
+date: 2023-07-16
 ---
 #competitive-programming/complete-search
 #competitive-programming/bitmask

@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Tractor
+date: 2023-09-15
 ---
 #competitive-programming/problem-reduction
 #competitive-programming/math

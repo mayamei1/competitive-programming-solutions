@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Noonerized Spumbers
+date: 2024-02-06
 ---
 #competitive-programming/complete-search
 ## _Solution:_

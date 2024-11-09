@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Plotting Polynomials
+date: 2023-09-23
 ---
 #competitive-programming/math/polynomials/horner
 #competitive-programming/dp

@@ -1,13 +1,12 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Card Divisibility
+date: 2023-04-05
 ---
 #competitive-programming/math/modular-arithmetic
 ## _Solution:_
-Divisibility of 9 can be found by adding the sum of digits. Same can be done with modulo 9. [[Modular Arithmetic#Addition, subtraction, multiplication|Modular arithmetic]] says that we can split the digits into sections as well . Ex: $1234\%m=((1\%9)+(2\%9)+(3\%9)+(4\%9))\%9$. But it can also be recombined by summing, ex: $(1+2+3+4)\%9$. Which means, you can find the answer by summing all numbers between `L` and `R`.
-
-Sum between $1$ and $n$ is $\frac{n*(n+1)}{2}$. So sum between $l$ and $r$ (inclusive) is `r*(r+1)/2 - l*(l+1)/2 + l`. In order to get the answer, you can throw a `% 9` at the end. Now, in order to keep the value small, and therefore calculation time small, use modular arithmetic (`% 9`'s everywhere ‼).
+Divisibility by nine can be found by checking if the sum of it's digits is divisible by nine. If we perform the sums over subgroups, then sum over the sums, the same is still true. So we can say that those groups are numbers between $l$ and $r$. Thus, we simply need to check if the sum of numbers between $l$ and $r$ is divisible by nine.
 
 https://open.kattis.com/problems/carddivisibility
 ```python

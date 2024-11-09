@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Water Journal
+date: 2024-01-29
 ---
 #competitive-programming/trivial
 #competitive-programming/math

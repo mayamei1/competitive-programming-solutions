@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Is Y a Vowel?
+date: 2024-01-29
 ---
 #competitive-programming/trivial
 #competitive-programming/string

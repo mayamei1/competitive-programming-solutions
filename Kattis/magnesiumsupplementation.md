@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Magnesium Supplementation
+date: 2024-01-29
 ---
 #competitive-programming/math/factors
 #competitive-programming/limit-reduction

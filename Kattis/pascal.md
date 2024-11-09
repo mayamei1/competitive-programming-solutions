@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Pascal
+date: 2023-07-31
 ---
-#competitive-programming/math/primes/prime-factors
+#competitive-programming/math/number-theory/prime-factors
 ## _Solution:_
 Get smallest prime factor $p$ of $n$, and calculate $n-n/p$. Special case: $n=1$.
 

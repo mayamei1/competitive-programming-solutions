@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Maximum Fix
+date: 2024-01-09
 ---
-#competitive-programming/ad-hoc
+#competitive-programming/permutation 
 #competitive-programming/simulation
 ## _Solution:_
 Grab each number, and determine the minimum rotation necessary for it to be a fixed number. Count up the frequency of each number, and print out the rotation with the maximum frequency (and the count).

@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/ieeextreme
+  - competitive-programming/judges/ieeextreme
 name: Ice Cubes
+date: 2023-10-28
 ---
 #competitive-programming/dp
 ## _Solution:_

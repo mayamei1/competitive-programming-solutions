@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Sun and Moon
+date: 2024-02-06
 ---
 #competitive-programming/simulation
 ## _Solution:_

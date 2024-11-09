@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Travel the Skies
+date: 2024-02-14
 ---
 #competitive-programming/simulation
 ## _Solution:_

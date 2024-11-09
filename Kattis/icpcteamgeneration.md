@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: ICPC Team Generation
+date: 2024-04-07
 ---
 #competitive-programming/greedy 
 ## _Solution:_

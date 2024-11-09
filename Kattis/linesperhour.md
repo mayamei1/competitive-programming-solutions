@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Lines Per Hour
+date: 2024-01-29
 ---
 #competitive-programming/sorting
 ## _Solution:_

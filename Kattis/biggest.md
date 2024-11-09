@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Biggest Slice
+date: 2023-08-21
 ---
 #competitive-programming/simulation
 #competitive-programming/limit-reduction

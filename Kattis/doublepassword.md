@@ -1,11 +1,11 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Double Password
+date: 2022-05-30
 ---
 #competitive-programming/string
 #competitive-programming/math
-#competitive-programming/ad-hoc
 ## _Solution:_
 Find number of different digits at each location, and the solution is 2 to the power of the number of differences.
 

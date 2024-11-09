@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Pretty Good Cube Root
+date: 2024-04-02
 ---
 #competitive-programming/binary-search 
 ## _Solution:_

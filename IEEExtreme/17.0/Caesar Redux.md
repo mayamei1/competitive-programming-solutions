@@ -1,9 +1,9 @@
 ---
 tags:
-  - competitive-programming/catalog/ieeextreme
+  - competitive-programming/judges/ieeextreme
 name: Caesar Redux
+date: 2023-10-28
 ---
-#competitive-programming/ad-hoc
 #competitive-programming/trivial
 ## _Solution:_
 Simple shift/Caesar cypher. Check for the word "the" to determine encoding or decoding.

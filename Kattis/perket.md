@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Perket
+date: 2024-03-18
 ---
 #competitive-programming/complete-search #competitive-programming/bitmask 
 ## _Solution:_

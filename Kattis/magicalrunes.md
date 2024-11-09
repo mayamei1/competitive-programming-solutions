@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Magical Runes
+date: 2023-04-05
 ---
 #competitive-programming/string
 #competitive-programming/math

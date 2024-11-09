@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Killing Chaos
+date: 2024-04-07
 ---
 #competitive-programming/ds/disjoint-set #competitive-programming/data-representation #competitive-programming/work-backwards 
 ## _Solution:_

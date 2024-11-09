@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Contest Advancement
+date: 2024-01-29
 ---
-#competitive-programming/ad-hoc
+#competitive-programming/greedy 
 ## _Solution:_
 Add team to answer until $s_i$'s count is at $c$, then you instead put them into the extras (keeping the same order). If length of answer is less than $k$, fill with extras.
 

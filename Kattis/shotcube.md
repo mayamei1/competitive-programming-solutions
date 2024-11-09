@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Shotcube
+date: 2023-09-12
 ---
 #competitive-programming/complete-search
 #competitive-programming/work-backwards

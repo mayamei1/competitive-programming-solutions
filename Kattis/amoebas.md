@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Sheba's Amoebas
+date: 2020-04-06
 ---
 #competitive-programming/graph/dfs
 ## _Solution:_

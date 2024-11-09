@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Bottled-Up Feelings
+date: 2024-01-08
 ---
 #competitive-programming/complete-search
 #competitive-programming/trivial

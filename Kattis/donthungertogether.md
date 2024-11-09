@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
-name: Don't Hunger Together
+  - competitive-programming/judges/kattis
+name: "Don't Hunger Together"
+date: 2024-01-31
 ---
 #competitive-programming/binary-search
 #competitive-programming/simulation

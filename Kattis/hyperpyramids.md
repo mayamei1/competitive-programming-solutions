@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
-name: Pascal's Hyper-Pyramids
+  - competitive-programming/judges/kattis
+name: "Pascal's Hyper-Pyramids"
+date: 2024-04-01
 ---
 #competitive-programming/complete-search #competitive-programming/dp #competitive-programming/limit-reduction #competitive-programming/graph/bfs 
 ## _Solution:_

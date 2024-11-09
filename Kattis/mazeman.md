@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: MazeMan
+date: 2023-04-17
 ---
 #competitive-programming/graph/flood-fill
 #competitive-programming/graph/bfs

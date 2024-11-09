@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
-name:
+  - competitive-programming/judges/kattis
+name: Flexible Spaces
+date: 2020-02-06
 ---
 #competitive-programming/complete-search
 #competitive-programming/trivial

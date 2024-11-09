@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Bank Queue
+date: 2024-03-04
 ---
 #competitive-programming/greedy #competitive-programming/ds/priority-queue 
 ## _Solution:_

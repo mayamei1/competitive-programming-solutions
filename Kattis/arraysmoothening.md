@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Array Smoothening
+date: 2023-09-11
 ---
 #competitive-programming/greedy
 #competitive-programming/ds/priority-queue

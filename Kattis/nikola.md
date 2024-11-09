@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Nikola
+date: 2023-09-21
 ---
 #competitive-programming/graph/dijkstra
 #competitive-programming/graph/sssp

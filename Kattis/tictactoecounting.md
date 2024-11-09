@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Tic Tac Toe Counting
+date: 2022-05-31
 ---
 #competitive-programming/dp/recursive 
 ## _Solution:_

@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Marbles On A Tree
+date: 2023-10-25
 ---
 #competitive-programming/graph/tree
 #competitive-programming/dp

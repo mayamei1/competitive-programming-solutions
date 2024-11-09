@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Neighborhood Watch
+date: 2024-02-12
 ---
 #competitive-programming/math/combinatorics
 ## _Solution:_

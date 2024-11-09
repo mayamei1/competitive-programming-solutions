@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/ieeextreme
+  - competitive-programming/judges/ieeextreme
 name: BeetleBag
+date: 2023-09-30
 ---
 #competitive-programming/dp/classical
 ## _Solution:_

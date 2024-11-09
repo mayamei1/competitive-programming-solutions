@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Terraces
+date: 2019-11-15
 ---
 #competitive-programming/graph/flood-fill
 #competitive-programming/graph/dfs

@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Prime Sieve
+date: 2023-07-28
 ---
-#competitive-programming/math/primes/sieve
+#competitive-programming/math/number-theory/sieve
 ## _Solution:_
 Prime sieve, nothing extra or MLE.
 

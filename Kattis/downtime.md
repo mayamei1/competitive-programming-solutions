@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Disastrous Downtime
+date: 2024-03-04
 ---
 Sort the timings of each start/end of a request. At each time, increment or decrement to keep track of the number of requests going on at a time. Make sure to do any potential decrements first if there are events of the same time. Then, do $\lfloor\frac{\max(\mathrm{requests})}{k}\rfloor$.
 ## _Solution:_

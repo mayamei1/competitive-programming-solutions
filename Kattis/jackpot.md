@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Jackpot
+date: 2024-02-05
 ---
 #competitive-programming/math/gcd
 ## _Solution:_

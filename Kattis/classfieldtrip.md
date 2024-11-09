@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Class Field Trip
+date: 2023-04-17
 ---
 #competitive-programming/string
 #competitive-programming/sorting

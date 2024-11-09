@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Getting Gold
+date: 2024-01-22
 ---
 #competitive-programming/graph/dfs
 #competitive-programming/graph/bfs

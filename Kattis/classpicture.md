@@ -1,11 +1,12 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Class Picture
+date: 2024-03-24
 ---
 #competitive-programming/complete-search 
 ## _Solution:_
-Back propagation, and when keeping track of invalid next name in path.
+Back propagation, and while keeping track of path, use the most recently added to find valid next elements.
 
 https://open.kattis.com/problems/classpicture
 ```cpp

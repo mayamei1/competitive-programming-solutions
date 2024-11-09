@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Single source shortest path, non-negative weights
+date: 2023-09-20
 ---
 #competitive-programming/graph/dijkstra
 #competitive-programming/graph/sssp

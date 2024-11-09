@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Erratic Ants
+date: 2023-07-20
 ---
 #competitive-programming/graph/bfs
 #competitive-programming/graph/sssp

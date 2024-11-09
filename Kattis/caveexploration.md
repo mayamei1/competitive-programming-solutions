@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Cave Exploration
+date: 2024-04-04
 ---
 #competitive-programming/graph/bridges #competitive-programming/graph/dfs 
 ## _Solution:_

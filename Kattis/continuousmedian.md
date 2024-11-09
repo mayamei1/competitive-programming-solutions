@@ -1,11 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Continuous Median
+date: 2022-10-17
 ---
-#competitive-programming/simulation
-#competitive-programming/ds/multiset
-#competitive-programming/ds/priority-queue
+#competitive-programming/simulation #competitive-programming/ds
 ## _Solution:_
 Use a multiset and an iterator/pointer to keep track of middle. Be sure to keep track of whether the new value is $<$ or $\ge$ than the current middle (C++ multiset inserts to the right most) and to keep track of even/odd parity to figure out how to move the iterator.
 

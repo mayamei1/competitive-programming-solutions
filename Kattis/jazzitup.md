@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Jazz it Up!
+date: 2024-01-08
 ---
-#competitive-programming/math/primes/prime-factors
+#competitive-programming/math/number-theory/prime-factors
 #competitive-programming/trivial
 ## _Solution:_
 Get all primes within 100000 (or some other reasonable number that is large enough to have primes that work for every $n$). Then iterate through every prime and check if $n\mod{m}\neq 1$.

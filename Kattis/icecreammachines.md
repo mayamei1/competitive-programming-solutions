@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Ice Cream Machines
+date: 2024-04-04
 ---
 #competitive-programming/greedy #competitive-programming/simulation #competitive-programming/binary-search
 ## _Solution:_

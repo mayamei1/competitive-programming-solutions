@@ -1,13 +1,14 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Longest Common Substring
+date: 2024-04-06
 ---
 #competitive-programming/string/kmp #competitive-programming/complete-search 
 ## _Solution:_
 Try every substring of one string, and compare with the rest with KMP.
 
-https://open.kattis.com/problemslongestcommonsubstring/
+https://open.kattis.com/problems/longestcommonsubstring/
 ```cpp
 #include <iostream>
 #include <vector>

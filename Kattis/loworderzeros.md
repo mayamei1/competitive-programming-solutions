@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Low Order Zeros
+date: 2023-08-04
 ---
-#competitive-programming/math/primes
+#competitive-programming/math/number-theory/primes
 #competitive-programming/math/modular-arithmetic
 #competitive-programming/math/factorials
 ## _Solution:_

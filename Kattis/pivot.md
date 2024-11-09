@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Pivot
+date: 2024-02-26
 ---
 #competitive-programming/data-representation 
 ## _Solution:_

@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Ignore the Garbage
+date: 2024-02-12
 ---
 #competitive-programming/math/combinatorics
 ## _Solution:_

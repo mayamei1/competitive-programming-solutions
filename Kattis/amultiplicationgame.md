@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: A Multiplication Game
+date: 2020-02-25
 ---
 #competitive-programming/greedy #competitive-programming/math #competitive-programming/dp/recursive 
 ## _Solution:_

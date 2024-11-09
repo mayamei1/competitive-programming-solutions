@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Trapezoid Walkway
+date: 2024-01-23
 ---
 #competitive-programming/graph/dijkstra
 #competitive-programming/graph/sssp

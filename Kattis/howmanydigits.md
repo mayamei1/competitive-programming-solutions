@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: How Many Digits?
+date: 2024-04-01
 ---
 #competitive-programming/math/factorials #competitive-programming/math/log-trick
 ## _Solution:_

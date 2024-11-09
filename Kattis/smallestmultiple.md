@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Smallest Multiple
+date: 2024-04-01
 ---
 #competitive-programming/math/gcd 
 ## _Solution:_

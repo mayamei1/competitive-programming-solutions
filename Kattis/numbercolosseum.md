@@ -1,10 +1,11 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Number Colosseum
+date: 2023-04-05
 ---
 #competitive-programming/simulation
-#competitive-programming/ds/stack
+#competitive-programming/ds
 ## _Solution:_
 Simulate :)
 

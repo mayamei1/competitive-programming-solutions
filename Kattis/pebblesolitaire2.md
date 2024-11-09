@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Pebble Solitaire
+date: 2024-03-25
 ---
 #competitive-programming/dp/recursive 
 ## _Solution:_

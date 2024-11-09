@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: 4 thought
+date: 2024-01-11
 ---
 #competitive-programming/complete-search 
 ## _Solution:_

@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
-name: Goldbach's Conjecture
+  - competitive-programming/judges/kattis
+name: "Goldbach's Conjecture"
+date: 2023-09-21
 ---
-#competitive-programming/math/primes/sieve
+#competitive-programming/math/number-theory/sieve
 ## _Solution:_
 Pre-calculate prime numbers, then for each query, check increasingly larger primes if $x-p_i$ is prime until it goes over half of $x$.
 

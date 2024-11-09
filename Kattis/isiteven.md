@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Is It Even?
+date: 2023-04-05
 ---
 #competitive-programming/math
 #competitive-programming/trivial

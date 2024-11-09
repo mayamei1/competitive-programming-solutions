@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Citations
+date: 2024-01-11
 ---
 #competitive-programming/graph/tree
 #competitive-programming/graph/dfs

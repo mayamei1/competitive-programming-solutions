@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Supply Routes
+date: 2023-04-10
 ---
 #competitive-programming/ds/disjoint-set
 #competitive-programming/work-backwards

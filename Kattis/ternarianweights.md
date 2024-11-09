@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Ternarian Weights
+date: 2024-01-23
 ---
 #competitive-programming/math
 ## _Solution:_

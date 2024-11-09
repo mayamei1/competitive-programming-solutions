@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Divisors
+date: 2023-08-02
 ---
-#competitive-programming/math/primes/prime-factors
+#competitive-programming/math/number-theory/prime-factors
 #competitive-programming/math/combinatorics
 ## _Solution:_
 Pre-calculate and store the prime factors of $1!,2!,\dots,431!$ in the form of $n!=a^i+b^j+\cdot+c^k$. For each query, find $_nC_k$ by adding/subtracting prime frequencies of each factorial, then calculate [[Primes#Number of unique divisors|the number of unique divisors]].

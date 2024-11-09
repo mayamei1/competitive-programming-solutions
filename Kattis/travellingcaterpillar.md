@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Travelling Caterpillar
+date: 2023-04-05
 ---
 #competitive-programming/graph/tree
 ## _Solution:_

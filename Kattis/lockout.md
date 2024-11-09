@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Lockout
+date: 2024-03-24
 ---
 #competitive-programming/greedy 
 ## _Solution:_

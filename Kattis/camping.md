@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Nordic Camping
+date: 2023-10-16
 ---
 #competitive-programming/dp
 #competitive-programming/limit-reduction

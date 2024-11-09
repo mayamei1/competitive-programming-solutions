@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Highest Hill
+date: 2024-03-20
 ---
 #competitive-programming/data-representation 
 ## _Solution:_

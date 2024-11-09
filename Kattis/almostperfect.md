@@ -1,9 +1,10 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Almost Perfect
+date: 2023-08-01
 ---
-#competitive-programming/math/primes/prime-factors
+#competitive-programming/math/number-theory/prime-factors
 ## _Solution:_
 Calculate the [[Primes#Sum of unique divisors|sum of unique divisors]] and calculate the difference of $sumDiv(n)$ and $n$.
 

@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: 99 Problems
+date: 2024-02-26
 ---
 #competitive-programming/complete-search #competitive-programming/trivial 
 ## _Solution:_

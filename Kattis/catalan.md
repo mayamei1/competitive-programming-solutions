@@ -1,7 +1,8 @@
 ---
 tags:
-  - competitive-programming/catalog/kattis
+  - competitive-programming/judges/kattis
 name: Catalan Numbers
+date: 2024-01-12
 ---
 #competitive-programming/math/combinatorics
 ## _Solution:_
